@@ -1,0 +1,445 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(
+        to bottom,
+        #8B0000 0%,      /* Темно-красный */
+        #B22222 25%,     /* Огненно-красный */
+        #DC143C 50%,     /* Малиновый */
+        #FF6347 75%,     /* Томатный */
+        #FF8C00 100%     /* Темно-оранжевый */
+    );
+    background-attachment: fixed;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Шапка */
+header {
+    background: #8B0000; /* Темно-красный вместо фиолетового */
+    color: #FFD700; /* Золотой текст */
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.header-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.header-box p {
+    font-size: 1.2rem;
+    color: #FFEC8B; /* Светло-золотой */
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+    color: #8B0000;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.genre-card {
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.genre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.genre-header h3 {
+    color: #8B0000;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.genre-tag {
+    background: #FFE4E1; /* Светло-розовый */
+    color: #8B0000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.genre-content p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.genre-content strong {
+    color: #333;
+}
+
+.comparison {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.comparison h2 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #8B0000;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background: #f0f0f0;
+}
+
+.authors {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.authors h2 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.author-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.author-item {
+    background: #FFE4E1;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #8B0000;
+}
+
+.author-item h4 {
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.facts {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.facts h2 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.facts ul {
+    margin-left: 25px;
+    font-size: 1.1rem;
+}
+
+.facts li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+footer {
+    background: #8B0000;
+    color: #FFD700;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #FFEC8B;
+}
+
+.footer-content p:first-child {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Иконки */
+i {
+    color: #8B0000;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .header-box h1 {
+        font-size: 2rem;
+    }
+    
+    .genre-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .author-list {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-box h1 {
+        font-size: 1.8rem;
+    }
+    
+    .genre-card, .intro, .comparison, .authors, .facts {
+        padding: 20px;
+    }
+    
+    .genre-header h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Стили для изображений жанров - без обрезки */
+.genre-image {
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #8B0000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center; /* Центрируем изображение */
+    background: #f5f5f5; /* Фон на случай если изображение меньше */
+}
+
+.genre-image img {
+    max-width: 100%; /* Не больше ширины контейнера */
+    height: auto; /* Сохраняем пропорции */
+    display: block;
+    margin: 0 auto; /* Центрируем по горизонтали */
+}
+
+.image-caption {
+    background: rgba(139, 0, 0, 0.9);
+    color: #FFD700;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.genre-image {
+    margin-top: 20px;
+}
+
+.genre-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #8B0000;
+}
+.comparison {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+}
+
+/* Или вариант с переносом текста */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: fixed; /* Фиксированная ширина столбцов */
+}
+
+th, td {
+    word-wrap: break-word; /* Перенос длинных слов */
+    max-width: 200px; /* Максимальная ширина ячеек */
+}
+
+/* Ещё лучше - адаптивная таблица */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+}
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+table {
+    min-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Стили для раздела "Разница между фэнтези и фантастикой" */
+.difference {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-left: 5px solid #8B0000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.difference h2 {
+    color: #8B0000;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.comparison-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.comparison-item h3 {
+    color: #8B0000;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.comparison-item ul {
+    margin-left: 20px;
+}
+
+.comparison-item li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.note {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 4px solid #8B0000;
+    font-size: 1.1rem;
+}
+
+.note strong {
+    color: #8B0000;
+}
+
+/* Адаптивность как у других разделов */
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .comparison-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .difference {
+        padding: 20px;
+    }
+    
+    .difference h2 {
+        font-size: 1.5rem;
+    }
+    
+    .comparison-item h3 {
+        font-size: 1.2rem;
+    }
+}
